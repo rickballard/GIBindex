@@ -3,8 +3,13 @@
 import os, sys, yaml, re, datetime
 
 def utc_ts(s):
+    import datetime
+    # Accept datetime objects or strings like 2025-08-09T03:59:46Z
+    if isinstance(s, datetime.datetime):
+        s = s.strftime('%Y-%m-%dT%H:%M:%SZ')
+    if not isinstance(s, str) or not s.endswith('Z'):
+        return False
     try:
-        if not s.endswith('Z'): return False
         datetime.datetime.strptime(s, '%Y-%m-%dT%H:%M:%SZ')
         return True
     except Exception:
