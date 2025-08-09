@@ -2,10 +2,6 @@ name: Validate GIB Entries
 
 on:
   pull_request:
-    paths:
-      - 'entries/**'
-      - 'schemas/**'
-      - 'scripts/**'
   push:
     paths:
       - 'entries/**'
