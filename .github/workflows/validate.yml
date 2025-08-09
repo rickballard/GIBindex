@@ -2,3 +2,22 @@ name: Validate GIB Entries
 
 on:
   pull_request:
+  push:
+    paths:
+      - 'entries/**'
+      - 'schemas/**'
+      - 'scripts/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install deps
+        run: pip install pyyaml
+      - name: Validate entries
+        run: python scripts/validate_entries.py
