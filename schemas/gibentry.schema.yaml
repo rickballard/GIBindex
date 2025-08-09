@@ -1,0 +1,30 @@
+# GIBentry Schema (YAML, human-readable)
+
+required:
+  - id
+  - term
+  - kind
+  - definition
+  - version
+  - timestamp
+  - status
+
+fields:
+  id: "gib:<domain>:<slug>:v<version>"
+  term: string
+  aliases: [string]
+  kind: { enum: [concept, protocol, datatype, abbrev, signal, role] }
+  definition: multiline string
+  context:
+    domain: string
+    tags: [string]
+  version: integer
+  timestamp: RFC3339 UTC
+  status: { enum: [active, deprecated, draft] }
+  relations:
+    supersedes: [id]
+    superseded_by: [id]
+    related: [id]
+  source:
+    authors: [string]
+    derived_from: [path or url]

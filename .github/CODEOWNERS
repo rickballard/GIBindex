@@ -1,0 +1,4 @@
+# CODEOWNERS
+* @rickballard
+/schemas/ @rickballard
+/entries/ @rickballard

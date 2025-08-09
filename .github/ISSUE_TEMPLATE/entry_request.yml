@@ -1,0 +1,25 @@
+name: Entry Request
+description: Propose a new GIB entry
+title: "entry: <term> — <domain>"
+labels: ["entry"]
+body:
+  - type: input
+    id: term
+    attributes:
+      label: Term
+      description: The human-readable term
+    validations:
+      required: true
+  - type: input
+    id: domain
+    attributes:
+      label: Domain
+      description: e.g., civium, ai-gov, general
+    validations:
+      required: true
+  - type: textarea
+    id: definition
+    attributes:
+      label: Definition
+    validations:
+      required: true

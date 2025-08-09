@@ -1,0 +1,19 @@
+id: gib:core:truth-metrics:v1
+term: Truth Metrics
+aliases: [TM]
+kind: concept
+definition: >
+  A structured approach for comparing claims across sources using evidence and provenance scoring.
+context:
+  domain: civium
+  tags: [epistemology, governance]
+version: 1
+timestamp: 2025-08-09T03:59:46Z
+status: draft
+relations:
+  supersedes: []
+  superseded_by: []
+  related: []
+source:
+  authors: [RickPublic, ChatGPT]
+  derived_from: []
