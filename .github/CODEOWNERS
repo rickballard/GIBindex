@@ -1,4 +1,3 @@
-# CODEOWNERS
-* @rickballard
-/schemas/ @rickballard
-/entries/ @rickballard
+# Sensitive paths
+/README.md @rickballard
+
