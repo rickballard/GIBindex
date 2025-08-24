@@ -28,3 +28,4 @@ fields:
   source:
     authors: [string]
     derived_from: [path or url]
+

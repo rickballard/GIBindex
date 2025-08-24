@@ -44,3 +44,4 @@ source:
 - ADRs record rationale for schema changes.
 
 See **CONTRIBUTING.md** for the workflow and **/schemas/** for strict field definitions.
+
