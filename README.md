@@ -1,3 +1,5 @@
+[📒 ISSUEOPS](./shared/docs/ISSUEOPS.md) · [🧪 Smoke Test](./shared/tools/CoStack-SmokeTest.ps1)
+
 # GIBindex — Gibberlink Interlingua Beings Index
 
 **Purpose.** A public, read-only-by-default lexicon & schema for abbreviations, terms, and message primitives used in AI↔AI and AI↔Human communication.  Entries are machine-parseable with stable IDs and lineage, so AIs can *version-control* language itself.
@@ -44,3 +46,4 @@ source:
 - ADRs record rationale for schema changes.
 
 See **CONTRIBUTING.md** for the workflow and **/schemas/** for strict field definitions.
+
