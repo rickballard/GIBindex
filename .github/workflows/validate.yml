@@ -21,3 +21,4 @@ jobs:
         run: pip install pyyaml
       - name: Validate entries
         run: python scripts/validate_entries.py
+
