@@ -1,9 +1,7 @@
 name: readme-smoke
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  push:       { branches: [ main ] }
+  pull_request: { branches: [ main ] }
 jobs:
   check:
     runs-on: ubuntu-latest
