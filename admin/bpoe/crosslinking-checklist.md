@@ -1,11 +1,8 @@
 # BPOE: Cross-linking pass (Civium canonicals)
 
-**Goal:** Glossary pages carry “See also” links to CoCivium canonicals pinned to the migration tag.
+**Goal:** Every entry point points to CoCivium canonicals pinned to a release tag.
 
-- Add / update `docs/glossary/*` entries with tag-pinned links to civium PREAMBLE & Core Assumption.
-- Ensure README remains owned by `main` when rebasing mixed ops/doc branches.
-- Run link check; fix 404s.
-
-Rebase rule:
-- Keep canonical files from `main` (`git checkout --ours`).
-- Accept net-new files from feature branches.
+- Maintain `docs/Civium-Canonicals.md` (CoModules) and glossary “See also” (GIBindex).
+- Append “Canonical References” to README where relevant.
+- Prefer tag-pinned links for provenance; bump tag only during explicit migration.
+- Rebase rule: keep canonicals from `main` (`git checkout --ours <path>`); accept net-new only.
