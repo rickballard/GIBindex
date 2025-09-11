@@ -1,4 +1,5 @@
 <!-- status: stub; target: 150+ words -->
+<!-- status: stub; target: 150+ words -->
 # Contributing to GIBindex
 
 ## Workflow
@@ -14,5 +15,6 @@
 ## Review
 - At least one maintainer approval.
 - Link the issue; state rationale and impacts.
+
 
 
