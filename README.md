@@ -26,7 +26,7 @@ kind: concept  # enum: concept|protocol|datatype|abbrev|signal|role
 definition: >
   A structured approach for comparing claims across sources using evidence and provenance scoring.
 context:
-  domain: civium
+  domain: CoCivium
   tags: [epistemology, governance]
 version: 1
 timestamp: 2025-08-09T03:59:46Z
@@ -46,4 +46,5 @@ source:
 - ADRs record rationale for schema changes.
 
 See **CONTRIBUTING.md** for the workflow and **/schemas/** for strict field definitions.
+
 

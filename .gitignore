@@ -2,3 +2,6 @@
 Thumbs.db
 *.tmp
 ~$*
+# OS / tooling
+*.bak
+
