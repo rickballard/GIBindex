@@ -37,3 +37,7 @@
 
 
 - **GM PR bloat:** OK: none open — _as of 
+- [2025-09-12T20:24:28.6226561Z] Nightly refresh queued
+
+
+- **GM PR bloat:** OK: none open — _as of 
