@@ -1,0 +1,19 @@
+name: Self-Evolve GIBindex
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+jobs:
+  evolve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebuild CanonGraph
+        run: pwsh -NoLogo -Command "Import-Csv core/xref/xref_summary.csv | Group-Object from | Measure-Object | Out-File core/graph/auto-evolve.log"
+      - name: Commit & Push
+        run: |
+          git config user.name 'coagent-bot'
+          git config user.email 'coagent@cocivium.org'
+          git add core/graph/*
+          git commit -m 'Auto-evolve: CanonGraph refresh' || echo 'No changes'
+          git push
