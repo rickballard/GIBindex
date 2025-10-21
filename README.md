@@ -47,4 +47,8 @@ source:
 
 See **CONTRIBUTING.md** for the workflow and **/schemas/** for strict field definitions.
 
+<!-- BEGIN: STATUS -->
+### Operational Status
+CoDrift Index: n/a% (n/a)
+<!-- END: STATUS -->
 
