@@ -1,0 +1,31 @@
+name: gib-drift-catcher
+on:
+  schedule: [{ cron: "23 3 * * *" }]
+  workflow_dispatch: {}
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    permissions: { contents: read, issues: write }
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read flags
+        id: flags
+        shell: bash
+        run: |
+          v=$(yq -r '.drift_catcher_enabled' ops/flags.yml 2>/dev/null || echo "true")
+          echo "enabled=$v" >> $GITHUB_OUTPUT
+      - name: Scan satellites (registry collection)
+        if: steps.flags.outputs.enabled == 'true'
+        shell: bash
+        run: |
+          mkdir -p emit
+          : > emit/registry_annotated.jsonl
+          for repo in $(gh repo list rickballard -L 200 --json nameWithOwner -q '.[].nameWithOwner'); do
+            url="https://api.github.com/repos/$repo/actions/artifacts"
+            json=$(gh api "$url" -q '.artifacts[] | select(.name=="gib-satellite") | .archive_download_url' || true)
+            if [ -n "$json" ]; then
+              echo "{\"repo\":\"$repo\",\"artifact\":\"present\"}" >> emit/registry_annotated.jsonl
+            fi
+          done
+      - uses: actions/upload-artifact@v4
+        with: { name: gib-hub-annotated, path: emit/registry_annotated.jsonl }

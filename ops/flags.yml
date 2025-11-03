@@ -1,0 +1,3 @@
+drift_catcher_enabled: true
+org_guards_enforced: true
+satellite_required: true
