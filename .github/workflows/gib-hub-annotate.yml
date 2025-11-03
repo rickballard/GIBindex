@@ -1,0 +1,14 @@
+name: gib-hub-annotate
+on: { workflow_dispatch: {} }
+jobs:
+  annotate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Touch deprecations view (placeholder)
+        shell: bash
+        run: |
+          mkdir -p emit
+          echo "{}" > emit/deprecations.jsonl
+      - uses: actions/upload-artifact@v4
+        with: { name: gib-deprecations, path: emit/deprecations.jsonl }
