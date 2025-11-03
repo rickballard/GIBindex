@@ -1,0 +1,63 @@
+{
+  "updated": "2025-09-15T06:43:31.2283738Z",
+  "gm_open": 0,
+  "issues": [
+    {
+      "number": 15,
+      "title": "Migration handoff pointer",
+      "createdAt": "2025-09-08T05:37:44Z",
+      "labels": [],
+      "url": "https://github.com/rickballard/GIBindex/issues/15"
+    }
+  ],
+  "branches": [
+    {
+      "date": "2025-08-14T02:22:13.0000000Z",
+      "name": "branding/og-20250813_2222"
+    },
+    {
+      "date": "2025-08-24T02:18:39.0000000Z",
+      "name": "chore/sync-shared/20250823-2218"
+    },
+    {
+      "date": "2025-08-24T01:54:42.0000000Z",
+      "name": "ci/auto-add-to-project"
+    },
+    {
+      "date": "2025-08-24T01:04:58.0000000Z",
+      "name": "ci/og-image-20250813_2232"
+    },
+    {
+      "date": "2025-08-24T17:02:06.0000000Z",
+      "name": "docs/covibe-prefs"
+    },
+    {
+      "date": "2025-09-08T05:15:21.0000000Z",
+      "name": "docs/glossary-core-assumption-c1"
+    },
+    {
+      "date": "2025-09-08T06:55:02.0000000Z",
+      "name": "docs/glossary-crosslinks-c1"
+    },
+    {
+      "date": "2025-08-09T05:16:54.0000000Z",
+      "name": "fix/validate-workflow"
+    },
+    {
+      "date": "2025-09-11T21:03:23.0000000Z",
+      "name": "gm/GIBindex-20250911-165926"
+    },
+    {
+      "date": "2025-09-11T21:15:23.0000000Z",
+      "name": "gm/GIBindex-20250911-171118"
+    },
+    {
+      "date": "2025-09-15T06:15:56.0000000Z",
+      "name": "gm/GIBindex-20250911-172359"
+    },
+    {
+      "date": "2025-09-08T07:05:39.0000000Z",
+      "name": "main"
+    }
+  ]
+}
