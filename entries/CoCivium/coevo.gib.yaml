@@ -1,0 +1,8 @@
+# entries/CoCivium/coevo.gib.yaml
+id: CoEvo
+epoch: "2025-11-11 02:28:07Z"
+brief: "Cooperative evolution that widens futures under guardrails"
+pressures: [entropy_floor, novelty_budget, dissent_quota, inclusion_weight]
+operators: [mutate, recombine, speciate, retire]
+fitness_tests: [reversibility, audit_pass, narrative_resonance, harm_risk]
+anti_collapse: [require_multi_domain, max_cosine_similarity]
