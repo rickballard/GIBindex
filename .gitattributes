@@ -15,3 +15,7 @@
 
 
 
+
+*.ps1 text=auto
+docs/** text eol=lf
+.github/workflows/** text eol=lf
