@@ -1,0 +1,8 @@
+# entries/CoCivium/congruency.gib.yaml
+id: Congruency
+epoch: "2025-11-11 02:28:07Z"
+brief: "Fit between actions, ethics, aims, and shared reality"
+indices:
+  - congruency_index
+  - entropy_index
+link_ethos: "docs/cocivia/CONGRUENCY_DOCTRINE.md"
